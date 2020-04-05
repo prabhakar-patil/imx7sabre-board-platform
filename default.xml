@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <default sync-j="4" revision="master"/>
 
-    <remote name="yocto"        alias="origin" fetch="https://git.yoctoproject.org/git"/>
-    <remote name="freescale"    alias="origin" fetch="https://github.com/Freescale"/>
-    <remote name="oe"           alias="origin" fetch="https://github.com/openembedded"/>
+  <default sync-j="4" revision="thud"/>
 
-    <proejct name="poky"                    remote="yocto"      path="sources/poky"                     revision="rocko"/>
-    <proejct name="meta-freescale"          remote="yocto"      path="sources/meta-freescale"           revision="rocko"/>
-    <proejct name="meta-freescale-3rdparty" remote="freescale"  path="sources/meta-freescale-3rdparty"  revision="rocko"/>
-    <proejct name="meta-freescale-distro"   remote="freescale"  path="sources/meta-freescale-distro"    revision="rocko"/>
-    <proejct name="Documentation"           remote="freescale"  path="sources/Documentation"            revision="rocko"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/Freescale" name="freescale"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
 
-    <proejct name="fsl-community-bsp-base"  remote="freescale"  path="sources/base"                     revision="rocko">
-        <linkfile dest="README" src="README"/>
-        <linkfile dest="setup-environment" src="setup-environment"/>
-    </proejct>
+  <project remote="yocto" revision="thud" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="thud" name="meta-freescale" path="sources/meta-freescale"/>
 
-    <proejct name="meta-openembedded"       remote="oe"         path="sources/meta-openembedded"        revision="rocko"/>
+  <project remote="oe" revision="thud" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="freescale" revision="thud" name="fsl-community-bsp-base" path="sources/base">
+	<linkfile dest="README" src="README"/>
+	<linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="freescale" revision="thud" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
+  <project remote="freescale" revision="thud" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
+  <project remote="freescale" revision="thud" name="Documentation" path="sources/Documentation"/>
 
 </manifest>
