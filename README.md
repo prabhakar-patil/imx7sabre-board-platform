@@ -6,14 +6,14 @@ This repo is based on FSL Community BSP
 
 Install `repo` tool
 
-`$ mkdir ~/bin`
-`$ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo`
-`$ chmod a+x ~/bin/repo`
-`$ PATH=${PATH}:~/bin`
+1. `$ mkdir ~/bin`
+2. `$ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo`
+3. `$ chmod a+x ~/bin/repo`
+4. `$ PATH=${PATH}:~/bin`
 
 ## Get BSP
 
-`$ mkdir imx7sabre-board-platform`
-`$ cd imx7sabre-board-platform`
-`$ repo init -u https://github.com/prabhakar-patil/imx7sabre-board-platform -b master -m default.xml`
-`$ repo sync`
+1. `$ mkdir imx7sabre-board-platform`
+2. `$ cd imx7sabre-board-platform`
+3. `$ repo init -u https://github.com/prabhakar-patil/imx7sabre-board-platform -b master -m default.xml`
+4. `$ repo sync`
