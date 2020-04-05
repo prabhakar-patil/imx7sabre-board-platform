@@ -10,6 +10,8 @@
   <proejct name="poky"                    remote="yocto"      path="sources/poky"                     revision="rocko"/>
   <proejct name="meta-freescale"          remote="yocto"      path="sources/meta-freescale"           revision="rocko"/>
   <proejct name="meta-freescale-3rdparty" remote="freescale"  path="sources/meta-freescale-3rdparty"  revision="rocko"/>
+  <proejct name="meta-freescale-distro"   remote="freescale"  path="sources/meta-freescale-distro"    revision="rocko"/>
+  <proejct name="Documentation"           remote="freescale"  path="sources/Documentation"            revision="rocko"/>
 
   <project remote="oe" revision="thud" name="meta-openembedded" path="sources/meta-openembedded"/>
 
@@ -17,8 +19,5 @@
 	<linkfile dest="README" src="README"/>
 	<linkfile dest="setup-environment" src="setup-environment"/>
   </project>
-
-  <project remote="freescale" revision="thud" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
-  <project remote="freescale" revision="thud" name="Documentation" path="sources/Documentation"/>
 
 </manifest>
